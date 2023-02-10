@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*.header(左側)の編集*/
+.header {
+    width: 35%; /* 固定する列の幅 */
+    height:100%;
+    position: fixed; /* 固定するためにposition: fixed;を指定 */
+    font-family: 'Comfortaa', cursive;
+    background-color:paleturquoise;
+}
+.header img{
+    width:37%;
+    margin-top:25%;
+    margin-left:30%;
+}
+.header #name{
+    margin-top:6%;
+    margin-left:30%;
+    margin-bottom:6%;
+    font-size:160%;
+}
+.header #page-link li{
+    list-style-type: none;
+    margin-left:40%;
+    font-size:130%;
+    line-height:2;
+}
+.header #page-link li a:link{
+    color:black;
+}
+.header #page-link li a:hover{
+    color:red;
+}
+
+/*.main(右側)の編集*/
+.main {
+    padding-left:40%;
+    padding-right:12%;
+    padding-bottom:5%;
+    flex: 1; /* スクロールする列は残りのスペースを使用 */
+    line-height:2;
+    background-color:whitesmoke;
+}
+.main #subtitle{
+    font-family: 'Comfortaa', cursive;
+    font-size:180%;
+    margin-bottom:5%;
+}
+.main p{
+    font-size:100%;
+}
+#top{
+    font-family: 'Comfortaa', cursive;
+    font-size:380%;
+    padding-top:25%;
+    padding-bottom:50%;
+}
+#top #title span {
+    display: none;
+  }
+  
+/*文字列後ろの線の設定*/
+#top #title::after {
+    content: "|";
+    animation: typinganime .8s ease infinite;
+}
+  
+@keyframes typinganime{
+    from{opacity:0}
+    to{opacity:1}
+}
+#profile{
+    padding-top:6%;
+    padding-bottom:6%;
+}
+#sentence{
+    padding-bottom:3%;
+}
+#skills{
+    padding-top:6%;
+    padding-bottom:6%;
+}
+#languages{
+    list-style-type: none;
+    padding-bottom:3%;
+}
+#language{
+    text-align:right;
+}
+#works{
+    padding-top:6%;
+}
+#works #work-title{
+    font-size:120%;
+}
+#works img{
+    width:40%;
+    border-style:inset;
+}
