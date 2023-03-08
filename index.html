@@ -12,6 +12,7 @@
     <title>Ebihara_Portfolio</title>
 </head>
 <body>
+    <!--画面左側のコードになります-->
     <div class="header">
         <img src="images/profile.png" id="photo" alt="photo">
         <p id="name">Ebihara Seiichiro</p>
@@ -22,6 +23,9 @@
             <li><a href="#works">- Works</a></li>
         </ul>
     </div>
+    
+    <!--ここから下は画面右側のコードになります-->
+    <!--プロフィール紹介-->
     <div class="main">
         <section id="top">
             <p><strong id="title">Ebihara Seiichiro's Portfolio</strong></p>
@@ -30,13 +34,14 @@
         <section id="profile">
             <p id="subtitle"><strong>Profile</strong></p>
             <p id="sentence">
-                主にJava、Pythonを使っています。AIや機械学習にも興味を持ち、Kaggleにも挑戦しています。常に新しい技術にチャレンジし、みんなの役に立つ開発をしていくことを目指しています。
+                主にJava、Pythonを使っています。常に新しい技術にチャレンジし、みんなの役に立つ開発をしていくことを目指しています。
             </p>
             <p>
                 <strong>Name</strong>　海老原誠一郎
             </p>
             <p>
                 <strong>SNS</strong>　GitHub、Twitter
+                <p>※GitHubは<a href="https://github.com/Srimp3412">こちら</a>です</p>
             </p>
             <p>
                 <strong>Hobby</strong>　読書、温泉めぐり
@@ -47,14 +52,16 @@
             </p>
         </section>
         <hr>
+
+        <!--スキルに関して-->
         <section id="skills">
             <p id="subtitle"><strong>Skills</strong></p>
             <ul id="languages">
                 <li style="width:65%; background-color:lightgray;">
                     <p id="language">Java 65</p>
                 </li>
-                <li style="width:50%; background-color:lightgray">
-                    <P id="language">Python 50</P>
+                <li style="width:60%; background-color:lightgray">
+                    <P id="language">Python 60</P>
                 </li>
                 <li style="width:40%; background-color:lightgray">
                     <p id="language">JavaScript(jQuery) 40</p>
@@ -76,25 +83,28 @@
             </p>
         </section>
         <hr>
+
+        <!--個人製作に関して-->
         <section id="works">
             <p id="subtitle"><strong>Works</strong></p>
+            <p>（個人・チーム開発のみ、研究実績等は掲載していません）</p>
             <div id="work1">
-                <p id="work-title">１，Numeron</p>
+                <p id="work-title">１，Tundoku（開発途中）</p>
+                <img src="images/numeron.png" alt="Tundoku.img">
+                <img src="images/numeron2.png" alt="Tundoku2.img">
+                <p>
+                    趣味である読書に関して、</br>
+                    ＜開発言語・環境＞　Python、Django、Docker、VSCode
+                </p>
+            </div>
+            <div id="work1">
+                <p id="work-title">２，Numeron</p>
                 <img src="images/numeron.png" alt="numeron.img">
                 <img src="images/numeron2.png" alt="numeron2.img">
                 <p>
-                    Javaを学習し始めて、アウトプットとして何か制作したいと思い、当時自分の中でハマっていたゲーム「Numeron」を作りました。</br>
+                    Javaを学習し始めて、アウトプットとして何か制作したいと思い、当時自分の中でハマっていたゲーム「Numeron」を作りました。
+                    ゲームのルール上すべての桁で同じ数字を含むことができないので、それを表現するのに知恵を絞りましたが、まだ完全に解決できていないので改善の余地がありそうです。</br>
                     ＜開発言語・環境＞　Java、Eclipse
-                </p>
-            </div>
-            </br>
-            <div id="work2">
-                <p id="work-title">２，自動採点プログラム</p>
-                <img src="images/saiten.png" alt="自動採点.img">
-                <img src="images/saiten2.png" alt="自動採点２.img">
-                <p>
-                    授業活動の一環として、文字認識機能搭載の自動採点プログラムを制作しました。</br>
-                    ＜開発言語・環境＞　Python、Google Colaboratory
                 </p>
             </div>
             </br>
@@ -103,9 +113,19 @@
                 <img src="images/mlabHP.png" alt="研究室HP.img">
                 <img src="images/mlabHP2.png" alt="研究室HP2.img">
                 <p>
-                    私が所属しているゼミの活動を発信するツールとして制作しました。</br>
-                    ゼミのHPの<a href="">リンク</a>です（現在は学内のみで閲覧可能になっています）</br>
+                    私が所属しているゼミの活動を発信するツールとして有志のメンバーを募って制作しました。自分は企画者としてサイトのコーディングに加え、スケジュール管理や担当割り等を行いました。</br>
+                    ゼミのHPの<a href="URLも掲載しておりません。ご了承ください。">リンク</a>です（現在は学内のみで閲覧可能になっています）</br>
                     ＜開発言語・環境＞　HTML・CSS、JavaScript(jQuery)、VSCode
+                </p>
+            </div>
+            </br>
+            <div id="work2">
+                <p id="work-title">４，MyQR</p>
+                <img src="images/saiten.png" alt="MyQR.img">
+                <img src="images/saiten2.png" alt="MyQR2.img">
+                <p>
+                    PySimpleGUIに興味を持ち、勉強の過程で制作しました。QRコード自体を制作するのは簡単にできたので、複数のURLを入れることやテキストをQRにする等の工夫を行いました。アプリ上のUIに関して勉強中で、制作途中です。</br>
+                    ＜開発言語・環境＞　Python、VSCode
                 </p>
             </div>
             </br>
@@ -117,7 +137,6 @@
                     ＜開発言語・環境＞　HTML・CSS、JavaScript(jQuery)、VSCode
                 </p>
             </div>
-            <p>これらのGitHubは<a href="https://github.com/Srimp3412">こちら</a>です(現在、取り組んでいます）</p>
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
